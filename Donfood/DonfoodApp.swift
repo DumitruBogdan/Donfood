@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct DonfoodApp: App {
+    @State private var restaurants = Restaurant.sampleData
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                RestaurantsView(restaurants: $restaurants)
+            }
         }
     }
 }

@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0A7D4C95280D7A5C002158E1 /* DonfoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4C94280D7A5C002158E1 /* DonfoodApp.swift */; };
-		0A7D4C97280D7A5C002158E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4C96280D7A5C002158E1 /* ContentView.swift */; };
 		0A7D4C99280D7A5E002158E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7D4C98280D7A5E002158E1 /* Assets.xcassets */; };
 		0A7D4C9C280D7A5E002158E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7D4C9B280D7A5E002158E1 /* Preview Assets.xcassets */; };
+		0A7D4CA3280D7A7F002158E1 /* RestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4CA2280D7A7F002158E1 /* RestaurantsView.swift */; };
+		0A7D4CA6280D7AF3002158E1 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4CA5280D7AF3002158E1 /* Restaurant.swift */; };
+		0A7D4CAC280D835D002158E1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4CAB280D835D002158E1 /* CardView.swift */; };
+		0A7D4CAE280D848B002158E1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4CAD280D848B002158E1 /* DetailView.swift */; };
+		0A7D4CB0280D8643002158E1 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D4CAF280D8643002158E1 /* DetailEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A7D4C91280D7A5C002158E1 /* Donfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Donfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7D4C94280D7A5C002158E1 /* DonfoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonfoodApp.swift; sourceTree = "<group>"; };
-		0A7D4C96280D7A5C002158E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A7D4C98280D7A5E002158E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A7D4C9B280D7A5E002158E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A7D4CA2280D7A7F002158E1 /* RestaurantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsView.swift; sourceTree = "<group>"; };
+		0A7D4CA5280D7AF3002158E1 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		0A7D4CAB280D835D002158E1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0A7D4CAD280D848B002158E1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0A7D4CAF280D8643002158E1 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,14 @@
 		0A7D4C93280D7A5C002158E1 /* Donfood */ = {
 			isa = PBXGroup;
 			children = (
+				0A7D4CA4280D7ADF002158E1 /* Model */,
 				0A7D4C94280D7A5C002158E1 /* DonfoodApp.swift */,
-				0A7D4C96280D7A5C002158E1 /* ContentView.swift */,
 				0A7D4C98280D7A5E002158E1 /* Assets.xcassets */,
 				0A7D4C9A280D7A5E002158E1 /* Preview Content */,
+				0A7D4CA2280D7A7F002158E1 /* RestaurantsView.swift */,
+				0A7D4CAB280D835D002158E1 /* CardView.swift */,
+				0A7D4CAD280D848B002158E1 /* DetailView.swift */,
+				0A7D4CAF280D8643002158E1 /* DetailEditView.swift */,
 			);
 			path = Donfood;
 			sourceTree = "<group>";
@@ -65,6 +77,14 @@
 				0A7D4C9B280D7A5E002158E1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A7D4CA4280D7ADF002158E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A7D4CA5280D7AF3002158E1 /* Restaurant.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7D4C97280D7A5C002158E1 /* ContentView.swift in Sources */,
+				0A7D4CAC280D835D002158E1 /* CardView.swift in Sources */,
+				0A7D4CAE280D848B002158E1 /* DetailView.swift in Sources */,
+				0A7D4CA6280D7AF3002158E1 /* Restaurant.swift in Sources */,
+				0A7D4CB0280D8643002158E1 /* DetailEditView.swift in Sources */,
 				0A7D4C95280D7A5C002158E1 /* DonfoodApp.swift in Sources */,
+				0A7D4CA3280D7A7F002158E1 /* RestaurantsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
